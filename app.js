@@ -9,12 +9,10 @@ app.use(cors())
 app.use(express.static('dist'))
 
 app.get('/version', (req, res) => {
-  res.send('12')
+  res.send('14')
 })
 
 app.get('/health', (req, res) => {
-  throw 'error...'
-  // eslint-disable-next-line no-unreachable
   res.send('ok')
 })
 
